@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/generic/eijkhout
+# catalog-date 2009-01-21 09:11:46 +0100
+# catalog-license collection
+# catalog-version undef
 Name:		texlive-eijkhout
 Version:	20090121
 Release:	1
@@ -38,6 +44,7 @@ CD label; and - repeat, a nestable, generic loop macro.
 %{_texmfdistdir}/tex/generic/eijkhout/CD_labeler_test.tex
 %{_texmfdistdir}/tex/generic/eijkhout/DB_process.tex
 %{_texmfdistdir}/tex/generic/eijkhout/repeat.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,3 +55,5 @@ CD label; and - repeat, a nestable, generic loop macro.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
