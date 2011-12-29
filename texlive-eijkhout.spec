@@ -16,27 +16,18 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
 
 %description
 Three unrelated packages: - DB_process, to parse and process
 database output; - CD_labeler, to typeset user text to fit on a
 CD label; and - repeat, a nestable, generic loop macro.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -45,7 +36,6 @@ CD label; and - repeat, a nestable, generic loop macro.
 %{_texmfdistdir}/tex/generic/eijkhout/CD_labeler_test.tex
 %{_texmfdistdir}/tex/generic/eijkhout/DB_process.tex
 %{_texmfdistdir}/tex/generic/eijkhout/repeat.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,5 +46,3 @@ CD label; and - repeat, a nestable, generic loop macro.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
