@@ -46,3 +46,17 @@ CD label; and - repeat, a nestable, generic loop macro.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20090121-2
++ Revision: 751389
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20090121-1
++ Revision: 718316
+- texlive-eijkhout
+- texlive-eijkhout
+- texlive-eijkhout
+- texlive-eijkhout
+
