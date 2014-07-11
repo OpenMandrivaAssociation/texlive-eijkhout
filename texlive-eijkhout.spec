@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-eijkhout
 Version:	20090121
-Release:	7
+Release:	8
 Summary:	Victor Eijkhout's packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/eijkhout
