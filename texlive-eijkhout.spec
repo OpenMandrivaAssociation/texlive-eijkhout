@@ -5,7 +5,7 @@
 # catalog-license collection
 # catalog-version undef
 Name:		texlive-eijkhout
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Victor Eijkhout's packages
 Group:		Publishing
