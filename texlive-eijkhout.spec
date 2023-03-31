@@ -1,6 +1,6 @@
 Name:		texlive-eijkhout
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Victor Eijkhout's packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/eijkhout
