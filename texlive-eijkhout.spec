@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Victor Eijkhout's packages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/eijkhout
+URL:		https://www.ctan.org/tex-archive/macros/generic/eijkhout
 License:	COLLECTION
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eijkhout.r%{version}.tar.xz
 BuildArch:	noarch
